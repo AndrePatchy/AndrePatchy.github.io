@@ -1,6 +1,6 @@
 title: André Oliveira
-description: Welcome to my portfolio!
-show_downloads: true
+description: With 3+ years of experience working as analyst, I am disciplined, passionate and eager to learn. I am a team player who is always prepared to brainstorm with a focus on problem-solving.
+show_downloads: false
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme
