@@ -7,36 +7,72 @@
     font-family: 'Courier New', Courier, monospace
 }
 
-.container-predictive {
-    height: 150vh;
+.container {
+    min-height: 100vh;
     position: relative;
     z-index: 1; 
     background-color: bisque;
+    overflow: auto;
 }
 
-.text-predictive {
+.container h1 {
     text-align: center;
-    padding: 50px;
 }
 
-.text-predictive h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 40px;
+.container h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.container p {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.container h3 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+} 
+
+.container ul {
+    text-align: left;
+    list-style: square;
+    margin-left: 15px;
+    font-size:20px;
+    margin-bottom: 15px;
+}
+
+.container h4 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.container h5 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* The links i guess */
+.container {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .card {
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1%;
+    border-radius: 5%;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 1000px;
-    max-width: 90%;
+    width: 90%;
+    max-width: 50%;
+    margin: 5% auto;
 }
 
 .card a:link {
@@ -45,100 +81,7 @@
     background-color: transparent;
 }
 
-/* Predictive Card */
-
-.card h2 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.card p {
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.card ul {
-    text-align: left;
-    list-style: square;
-    margin-left: 15px;
-    font-size:20px;
-    margin-bottom: 15px;
-}
-
-.card h4 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.card ol {
-    text-align: left;
-    list-style: square;
-    margin-left: 15px;
-    font-size:20px;
-    margin-bottom: 15px;
-}
-
-.card h5 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.card a {
-    font-size: 25px;
-    color: black;
-}
-
-/* Curbing Card */
-
-.container-curbing {
-    height: 150vh;
-    position: relative;
-    z-index: 1; 
-    background-color: bisque;
-}
-
-.text-curbing {
-    text-align: center;
-    padding: 50px;
-}
-
-.text-curbing h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 40px;
-}
-
-/* Customer Profiling */
-
-.container-profiling {
-    height: 150vh;
-    position: relative;
-    z-index: 1; 
-    background-color: bisque;
-}
-
-.text-profiling {
-    text-align: center;
-    padding: 50px;
-}
-
-.text-profiling h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 40px;
-}
-
-/* K-Means */
+/* K-Means css has its own properties, because its a smaller card */
 
 .container-k-means {
     height: 100vh;
@@ -149,89 +92,9 @@
 
 .text-k-means {
     text-align: center;
-    padding: 50px;
 }
 
 .text-k-means h1 {
     font-size: 40px;
     font-weight: 800;
-    margin-top: 40px;
-}
-
-.card-k-means {
-    position: absolute;
-    top:35%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 2;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 1000px;
-    max-width: 90%;
-}
-
-.card-k-means a:link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.text-k-means h2 {
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.text-k-means ul {
-    text-align: left;
-    font-size: 20px;
-    padding-left: 50px;
-    list-style:decimal;
-}
-
-.card-k-means a:hover {
-    color: #7aaec0;
-    background-color: transparent;
-    text-decoration:none;
-}
-
-/* Scrape */
-
-.container-scrape {
-    height: 150vh;
-    position: relative;
-    z-index: 1; 
-    background-color: bisque;
-}
-
-.text-scrape {
-    text-align: center;
-    padding: 50px;
-}
-
-.text-scrape h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 40px;
-}
-
-/* Diabesis */
-
-.container-diabesis {
-    height: 150vh;
-    position: relative;
-    z-index: 1; 
-    background-color: bisque;
-}
-
-.text-diabesis {
-    text-align: center;
-    padding: 50px;
-}
-
-.text-diabesis h1 {
-    font-size: 40px;
-    font-weight: 800;
-    margin-top: 40px;
 }
