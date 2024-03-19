@@ -1,0 +1,338 @@
+/* asterisk is a universal selector, that matches any element and applies styles globally across all elements within a webpage */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    z-index: 1; /* controls the stacking order of elements that overlap */
+}
+
+.text {
+    text-align: center;
+    padding: 100px;
+}
+
+.text h1 {
+    font-size: 65px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../imgs/brain.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    background-color:antiquewhite;  /*cornsilk */
+    border: .5px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    color: #000000;
+    padding: 10px;
+    margin: 5px; 
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: rgb(250, 235, 215);
+}
+
+/* Cards */
+
+.card {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 1000px;
+}
+
+/* About Me Card */
+
+.card-about-content h1 {
+    font-size: 40px;
+    color: #7aaec0;
+    /* margin-left: 20px; */
+    margin-bottom: 20px;
+}
+
+.card-about-content p {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left;
+    /* margin-left: 40px; */
+}
+
+.card-about-content strong {
+    color: #7aaec0;
+}
+
+.card-about-content {
+    text-align: left;
+}
+
+.card-about-content h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:  #7aaec0;
+}
+
+.card-about-content h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:  #7aaec0;
+}
+
+.card-about-content ul {
+    padding-left: 70px;
+    font-size: 22px;
+    list-style-type: square;
+}
+
+.card-about-content ul li {
+    margin-bottom: 5px;
+}
+
+.hidden {
+    display:none;
+}
+
+.blur {
+    filter: blur(7px)
+}
+
+/* Data Science Card */
+
+#datascienceCard {
+    width: 1100px;
+    height: 600px;
+}
+
+.card-datascience-content h1 {
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.card-datascience-content h2 {
+    font-size: 24px;
+    color: #7aaec0;
+    margin-bottom: 25px;
+}
+
+.card-datascience-content ul {
+    font-size: 25px;
+    list-style-type: square;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.card-datascience-content a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-datascience-content a:hover {
+    color: #7aaec0;
+    background-color: transparent;
+    text-decoration:none;
+}
+
+/* Computer Science */
+
+#computerCard {
+    width: 250px;
+    height: 75px;
+}
+
+.card-computer-content h1 {
+    font-size: 24px;
+    color: #7aaec0;
+    text-align: center;
+}
+
+/* Reach Me Card */
+
+#reachCard {
+    width: 550px;
+    height: 350px;
+}
+
+.card-reach-content h2 {
+    margin-bottom: 30px;
+    color:  #7aaec0;
+}
+
+.card-reach-content ul {
+    font-size: 30px;
+}
+
+.card-reach-content li {
+    list-style: none;
+    line-height: 60px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.card-reach-content a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.card-reach-content a:hover {
+    color: #7aaec0;
+    background-color: transparent;
+    text-decoration:none;
+}
+
+/* ::before allows to add decorative elements before of the HTML content and without altering it */
+
+.card-reach-content .linkedin .t::before {
+    content: "";
+    display:inline-block;
+    background: url('../imgs/linkedin_logo.webp') no-repeat left center;
+    background-size: contain;
+    position: absolute;
+    left: -2em;
+    width: 2em;
+    height: 2em;
+}
+
+.card-reach-content .linkedin .t {
+    position: relative; 
+    top: 0em;
+    left: 1em; 
+}
+
+.card-reach-content .github .t::before {
+    content: "";
+    display: inline-block;
+    background: url('../imgs/GitHub-logo.png') no-repeat left center;
+    background-size: contain; 
+    position: absolute;
+    left: -2em;
+    width: 2em;
+    height: 2em;
+}
+
+.card-reach-content .github .t {
+    position: relative; 
+    top: 0em; 
+    left: 1em; 
+}
+
+.card-reach-content .gmail .t::before {
+    content: "";
+    display:inline-block;
+    background: url('../imgs/gmail.png') no-repeat left center;
+    background-size: contain;
+    position: absolute;
+    left: -2em;
+    width: 2em;
+    height: 2em;
+}
+
+.card-reach-content .gmail .t {
+    position: relative; 
+    top: 0em; 
+    left: 1em; 
+}
+
+.card-reach-content .discord .t::before {
+    content: "";
+    display:inline-block;
+    background: url('../imgs/discord.png') no-repeat left center;
+    background-size: contain;
+    position: absolute;
+    left: -2em;
+    width: 2em;
+    height: 2em;
+}
+
+.card-reach-content .discord .t {
+    position: relative; 
+    top: 0em; 
+    left: 1em; 
+}
+
+/* Feedback card */
+
+.feedback-card-content h2 {
+    font-size: 30px;
+    color: #7aaec0;
+    margin-bottom: 20px;
+}
+
+.feedback-card-content dl {
+    font-size: 25px;
+    margin-bottom: 35px;
+}
+
+.feedback-card-content dl dt {
+    padding: 15px;
+}
+
+.feedback-card-content dl dd {
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.feedback-card-content p {
+    font-size: 25px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.feedback-card-content strong {
+    color: #7aaec0;
+}
+
+.feedback-card-content a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.feedback-card-content a:hover {
+    color: #7aaec0;
+    background-color: transparent;
+    text-decoration:none;
+}

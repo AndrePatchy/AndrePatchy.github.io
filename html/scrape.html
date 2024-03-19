@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Web scrapping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+<body>
+    <div class="container-scrape">
+        <div class="text-scrape">
+            <h1>Web scrapping the 2 largest Portuguese retailers' websites</h1>
+            <div class="card">
+                <h2>Context</h2>
+                <p>This project’s background is the will to compare prices of the 25 items included in the Food Baskets: Operational Program to Support the Neediest People. To extract the data, we used the libraries Selenium, Requests, Beautiful Soup and lxml libraries. To clean and filter we used traditional data cleaning techniques and the library rapidfuzz.</p>
+                <h3>Goals</h3>
+                <ul>
+                    <li>Extract the data of the web site</li>
+                    <p> </p>
+                    <li>Parse the data</li>
+                    <p> </p>
+                    <li>Analyse the data</li>
+                </ul>
+                <h4>Solution</h4>
+                <p>We scrapped information about 16866 products of 2 retailers. We created a data set with 16866 rows and 8 features. Then, we filtered the data set two times. Once to a data set with 3639 observations for analysis purposes. And a second to a data set with 1236 observations to make it possible to inform the consumer of the products available in both supermarkets considering the 25 Food Baskets. The index we have followed is:</p>
+                <ol>
+                    <li>Data Collection</li>
+                    <li>Data Cleaning</li>
+                    <li>Data Visualization and Analysis</li>
+                </ol>
+                <h5>Tech Stack</h5>
+                <ul>
+                    <li>Python (numpy, pandas, selenium, beautiful soup, lxml)</li>
+                    <li>Jupyter</li>
+                    <li>Visual Studio Code</li>
+                    <li>Git</li>
+                </ul>
+                <a href="../reports/scrape.pdf" target="_blank">Click here to see the <strong>project report</strong>.</a>
+                <p> </p>
+                <a href="https://github.com/AndrePatchy/nova-ims/tree/main/python/webscrapping_project/scripts" target="_blank">Click here to see the <strong>jupyter notebook.</strong></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
