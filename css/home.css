@@ -7,6 +7,8 @@
     font-family: 'Courier New', Courier, monospace
 }
 
+/* Main Ccntainer */
+
 .container {
     width:100%;
     height: 100vh;
@@ -36,6 +38,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: 15%;
 }
 
 .button {
@@ -55,20 +58,6 @@
     color: rgb(250, 235, 215);
 }
 
-/* Cards */
-
-.card {
-    background-color: white;
-    padding: 1%;
-    border-radius: 5%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    max-width: 50%;
-    margin: 5% auto;
-    position:relative;
-    top: -60%;
-}
-
 .hidden {
     display:none;
 }
@@ -81,17 +70,30 @@
     filter: blur(7px);
 }
 
+/* Cards */
+
+.card {
+    background-color: white;
+    padding: 1%;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 50%;
+    margin: 5% auto;
+    position:relative;
+    top: -55%;
+}
 
 /* About Me Card */
 
 .card-about-content h1 {
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: #7aaec0;
     margin-bottom: 20px;
 }
 
 .card-about-content p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 15px;
     text-align: left;
 }
@@ -110,14 +112,14 @@
 }
 
 .card-about-content h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 10px;
     margin-top: 20px;
     color:  #7aaec0;
 }
 
 .card-about-content h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 10px;
     margin-top: 20px;
     color:  #7aaec0;
@@ -136,21 +138,20 @@
 /* Data Science Card */
 
 .card-datascience-content h1 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #000000;
     margin-bottom: 4%;
 }
 
 .card-datascience-content h2 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: #7aaec0;
-    margin-bottom: 1%;
 }
 
 .card-datascience-content ul {
     font-size: 1.5vw;
     list-style-type: square;
-    padding: 4%;
+    padding: 3%;
 }
 
 .card-datascience-content a:link {
@@ -281,18 +282,18 @@
 
 /* Feedback card */
 
-.feedback-card-content h2 {
-    font-size: 2vw;
+.feedback-card-content h1 {
+    font-size: 1.5vw;
     color: #7aaec0;
 }
 
 .feedback-card-content dl {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 5%;
 }
 
 .feedback-card-content dl dt {
-    padding: 2%;
+    padding: 1%;
 }
 
 .feedback-card-content dl dd {
@@ -301,8 +302,13 @@
 }
 
 .feedback-card-content p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-bottom: 5%;
+}
+
+.feedback-card-content h2 {
+    font-size: 1.5vw;
+    color: #7aaec0;
 }
 
 .feedback-card-content strong {
@@ -320,10 +326,3 @@
     background-color: transparent;
     text-decoration:none;
 }
-
-
-/* @media (max-width: 884px) {
-    .card-reach-content p {
-        font-size: 3vw;
-    }
-} */
