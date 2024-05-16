@@ -7,61 +7,42 @@
     font-family: "Muli", sans-serif
 }
 
-.container {
+/* Datascience projects container */
+
+.container1 {
     min-height: 100vh;
     position: relative;
     z-index: 1; 
-    background-color: #12bab9;
+    background-color:rgba(191,215,47,255);
     overflow: auto;
 }
 
-.container h1 {
+.container1 h1 {
     text-align: center;
+    font-size: 150%;
 }
 
-.container h2 {
-    font-size: 30px;
+.container1 h2 {
+    font-size: 120%;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
+    color: rgba(191,215,47,255);
 }
 
-.container p {
-    font-size: 20px;
+.container1 p {
+    font-size: 100%;
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 2%;
+    line-height: 140%;
 }
 
-.container h3 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-} 
-
-.container ul {
+.container1 ul {
     text-align: left;
     list-style: square;
-    margin-left: 15px;
-    font-size:20px;
-    margin-bottom: 15px;
-}
-
-.container h4 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.container h5 {
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-/* The links i guess */
-.container {
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    text-align: center;
+    margin-left: 2%;
+    font-size:100%;
+    margin-bottom: 2%;
+    line-height: 140%;
 }
 
 .card {
@@ -99,6 +80,16 @@
     font-weight: 800;
 }
 
+/* Computer science projects container */
+
+.container2 {
+    min-height: 100vh;
+    position: relative;
+    z-index: 1; 
+    background-color:#12bab9;
+    overflow: auto;
+}
+
 /* Libft */
 
 .card.libft img {
@@ -117,14 +108,29 @@
     box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+.card.libft h1 {
+    font-size: 110%;
+    margin-bottom: 3%;
+}
+
+.card.libft h2 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 110%;
+}
+
 .card.libft ul {
     line-height: 150%;
     font-size: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
 }
 
 .card.libft p {
     line-height: 150%;
-    font-size: 90%;
+    font-size: 100%;
+    margin-bottom: 3%;
 }
 
 .card.libft table {
@@ -136,7 +142,7 @@
     border: 1px solid #dddddd;
     text-align: center;
     padding: 1%;
-    font-size: 90%;
+    font-size: 100%;
 }
 
 .card.libft th {
@@ -146,7 +152,7 @@
 /* gnl card */
 
 .card.gnl img {
-    max-width: 90%;
+    max-width: 100%;
     display: block;
     margin-bottom: 2.5%;
     margin-left: auto;
@@ -161,24 +167,52 @@
     box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+.card.gnl ul {
+    line-height: 150%;
+    font-size: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+}
+
+.card.gnl h1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 110%;   
+}
+
 .card.gnl p {
     line-height: 150%;
-    font-size: 90%;
+    font-size: 100%;
 }
 
 .card.gnl li {
-    line-height: 150%;
-    font-size: 110%;
+    line-height: 140%;
+    font-size: 100%;
 }
 
 /* printf */
 
 .card.printf img {
-    max-width: 90%;
+    max-width: 100%;
     display: block;
     margin-bottom: 2.5%;
     margin-left: auto;
     margin-right: auto;   
+}
+
+.card.printf h1 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 110%;   
+}
+
+.card.printf ul {
+    line-height: 150%;
+    font-size: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
 }
 
 .card.printf iframe {
@@ -192,9 +226,4 @@
 .card.printf p {
     line-height: 150%;
     font-size: 100%;
-}
-
-.card.printf li {
-    line-height: 150%;
-    font-size: 120%;
 }

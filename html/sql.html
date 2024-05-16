@@ -8,37 +8,37 @@
     <link rel="stylesheet" type="text/css" href="../css/projects.css">
 </head>
 <body>
-    <div class="container auction">
+    <div class="container1 auction">
         <h1>Black Friday Online Auction SQL script</h1>
         <div class="card auction">
             <h2>Context</h2>
-            <p>Black friday. The company will host a 2 weeks online auction. We've been tasked to prepare a script that supports the OLTP process.</p>
-            <h3>Goals</h3>
+            <p>Last 2 weeks of November. The company will host a 2 weeks online auction during black friday. We've been tasked to prepare a script that supports the OLTP process.</p>
+            <ul>
+                <li><a href="../reports/sql_report.pdf" target="_blank">Report</strong></a></li>
+                <li><a href="https://github.com/AndrePatchy/nova-ims/blob/main/t-sql/auction_script.sql" target="_blank">Jupyter notebook</strong></a></li>
+            </ul>
+            <h2>Goals</h2>
             <ul>
                 <li>Design the auction schema in a CosmosDB database</li>
-                <p> </p>
                 <li>Create the stored procedures to support the online auction</li>
             </ul>
-            <h4>Solution</h4>
+            <h2>Solution</h2>
             <p>We've built an auction schema and created stored procedures for adding products to auction,
                 bidding on a product, removing a product from auction, updating a product’s auction status and
-                creating lists of product’s bidding history. The index we have followed is:</p>
+                creating lists of product’s bidding history. The approach we have followed is:</p>
             <ul>
                 <li>Introduction</li>
                 <li>Business problem</li>
                 <li>Schema and table configuration</li>
                 <li>Stored Procedures</li>
             </ul>
-            <h5>Tech Stack</h5>
+            <h2>Tech Stack</h2>
             <ul>
                 <li>T-SQL</li>
                 <li>MS Azure</li>
                 <li>Visual Studio Code</li>
                 <li>Git</li>
             </ul>
-            <a href="../reports/sql_report.pdf" target="_blank">Click here to see the <strong>project report</strong>.</a>
-            <p> </p>
-            <a href="https://github.com/AndrePatchy/nova-ims/blob/main/t-sql/auction_script.sql" target="_blank">Click here to see the <strong>jupyter notebook.</strong></a>
         </div>
     </div>
 </body>
