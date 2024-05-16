@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Next Line</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+<body>
+    <div class="container gnl">
+        <div class="card gnl">
+			<a target="_blank">
+                <img src="../imgs/gnl.png" alt="gnl Image">
+            </a>
+			<p> </p>
+			<p>
+				This project allows one to learn how to read from a file descriptor and use static variables. 
+				This function retrieves a single line from a specified file descriptor. 
+				When called in a loop, get_next_line returns all the contents of the file, one line at a time until the end of the file is reached. 
+				Additionally, this function can be compiled with any buffer size specified.
+			</p>
+			<ul>
+				<li><a target="_blank" href="https://github.com/AndrePatchy/Get_next_line/blob/main/Subject/en.subject.get_next_line.pdf">Subject</a></li>
+				<li><a target="_blank" href="https://github.com/AndrePatchy/Get_next_line">Code</a></li>
+			</ul>
+			<p>If you don't want to read, check out my walkthrough video (it's in portuguese):</p>
+			<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/FTkboThgsRM?si=a5O5wJOVKbZHSFEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<p> </p>
+			<p><strong>Requirements of the Mandatory part</strong></p>
+			<ul>
+				<li>Read from one file descriptor, one line at a time.</li>
+				<li>Needs to return the line that was read. If empty or error, return NULL.</li>
+				<li>Should work as expected reading from a file or standard input.</li>
+				<li>Returned line should include the terminating \n character, except if it's the end of the file and the line does not end with \n.</li>
+				<li>The get_next_line.h header file should include at least the get_next_line() function.</li>
+				<li>All additional functions should be included in get_next_line_utils.c file, libft is not allowed.</li>
+				<li>To define the buffer size for read(), add the option to the compiled file -D BUFFER_SIZE=[SIZE].</li>
+			</ul>
+			<p> </p>
+			<p><strong>Requirements of the Bonus part</strong></p>
+			<ul>
+				<li>Use only one static variable.</li>
+				<li>Manage multiple file descriptors at the same time.</li>
+				<li>Bonus files should include a suffix _bonus.[c/h].</li>
+			</ul>
+    </div>
+</body>
+</html>

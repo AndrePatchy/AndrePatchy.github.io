@@ -6,15 +6,14 @@
     <meta charset="UTF-8">
     <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Welcome to my Portfolio!</title>
     <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
 <!-- Header and Buttons-->
 <div class="container">
-    <h1 class="header-blurred">Welcome to André's Portfolio ⌂</h1>
     <div class="button-container">
-        <button class="button" id="aboutBtn">About Me</button>
+        <h1 class="header-blurred">Welcome to a André Oliveira's Portfolio! ⌂</h1>
+        <button class="button" id="aboutBtn">About</button>
         <button class="button" id="datascienceBtn">Data Science & Machine Learning Projects</button>
         <button class="button" id="computerBtn">Computer Science Projects</button>
         <button class="button" id="reachBtn">Reach Me</button>
@@ -23,30 +22,35 @@
     <!-- About Me -->
     <div id="aboutCard" class="card hidden">
         <div class="card-about-content">
-            <h1>👋 Hi!</h1>
-            <p>I'm André Oliveira. I like to read, riding bikes and stroll with my girlfriend. 
-                <strong>Fun Fact:</strong> I've written a book available <a target="_blank" 
-                href="http://monographs.uc.pt/iuc/catalog/view/241/526/933-1"><strong>here</strong></a>.</p>
-            <h2>📚 My education journey so far is on:</h2>
+            <h1>Hi, welcome to my Hub!   👋</h1>
+            <p>I'm André Oliveira, also know at <a target="_blankf" href="https://www.42lisboa.com">42</a> as andos-sa.</p>
+            <p> </p>
+            <p>This website records my progression as developer. 
+                Within it, you'll find detailed descriptions of each project, including its scope, approach, and solution. 
+                Additionally, I've provided short walkthrough videos for each project to offer a visual explanation.</p>
+            <h2>📚 Educational Background</h2>
             <ul>
-                <li>42 Common Core @ 42 Lisbon</li>
-                <li>Postgraduation, Data Science and Advanced Analytics @ NOVA-IMS</li>
-                <li>MSc, Administration @ Universidade de Coimbra</li>
-                <li>BSc, History and Geography @ Universidade de Coimbra</li>
+                <li>42 Common Core @ 42 Lisboa (April 2024 - Present)</li>
+                <li>Postgraduation, Data Science and Advanced Analytics @ NOVA-IMS (Feb 2023 - Feb 2024)</li>
+                <li>MSc, Administration @ Universidade de Coimbra (September 2020 - September 2022)</li>
+                <li>BSc, History and Geography @ Universidade de Coimbra (September 2016 - September 2019)</li>
             </ul>
-            <h3>🖥 My 3+ years of professional experience are in: </h3>
+            <h2 >🖥    Professional Background</h2>
             <ul>
                 <li>Full-stack Developer @ Autonomous</li>
-                <li>Data Scientist @ Autonomous</li>
-                <li>Science and Technology Manager @ Universidade de Coimbra</li>
-                <li>Data Analyst @ Universidade de Coimbra</li>
+                <li>Functional Analyst @ Universidade de Coimbra</li>
+                <li>Researcher @ Universidade de Coimbra</li>
             </ul>
         </div>
     </div>
     <!-- Data Science -->
     <div id="datascienceCard" class="card hidden">
         <div class="card-datascience-content">
-            <h1>Click on any project you want to see in more detail. <h1>
+            <a target="_blankf" href="https://www.novaims.unl.pt/">
+                <img src="imgs/novaimsimage.png" alt="Data Science Image">
+            </a>
+            <h1>The following projects were developed in the context of my Postgraduation in Data Science and Advanced Analytics at NOVA-IMS.</a> 
+                In each one you'll find a detailed description of the project's scope, and 2 external links to the project's code and report.<h1>
             <h2>Supervised Learning</h2>
             <ul>
                 <li><a target="_blank" href="html/customer_response.html">Predictive Analysis of Customer Response</a></li>
@@ -64,20 +68,38 @@
             </ul>
             <h2>T-SQL</h2>
             <ul> 
-                <li><a target="_blank" href="html/sql.html">Black Friday Online Auction SQL script</a></li>
+                <li><a target="_blank" href="html/sql.html">Black Friday Online Auction</a></li>
             </ul>
         </div>
     </div>
     <!-- Computer Science -->
     <div id="computerCard" class="card hidden">
         <div class="card-computer-content">
-            <h1>Comming Soon!</h1>
+            <a target="_blankf" href="https://www.42lisboa.com">
+                <img src="imgs/42_Logo.png" alt="Computer Science Image">
+            </a>
+            <h1>The following projects are being developed in the context of 42 common-core.</h1>
+            <p style= "font-size: 140%;">The 42 Common Core was developed in Paris in 2013 and is continually evaluated and developed. 
+                Students progress through the program by completing projects and earning experience to level up, making the learning experience feel like a game.</p>
+            <h2><a target="_blank" href="html/libft.html">Libft</a></h2>
+            <p>A personal library of C functions that will help one's journey through the common-core.
+                Libft involves learning how the standard functions of C language work by writing them from scratch and creating a personal library. 
+                This project is vital as the library will be used in future assignments at 42.</a> 
+            </p>
+            <h2><a target="_blank" href="html/gnl.html">Get Next Line</a></h2>
+            <p>A function that reads a line from a file descriptor.
+                One learned how to read from a file descriptor using static variables. 
+                This function retrieves a single line from a specified file descriptor. 
+                When called in a loop, the function returns all the contents of the file, one line at a time until the end of the file is reached. 
+                Additionally, this function can be compiled with any buffer size specified at compile time. 
+            </p>
+            <h2><a target="_blank" href="html/printf.html">Printf</a></h2>
+            <p>This project involved recreating the well-known C library function, printf. This provided a valuable learning opportunity in variadic arguments, particularly if we intend to incorporate additional flags into our implementation of print.</p>
         </div>
     </div>
     <!-- Reach Me -->
     <div id="reachCard" class="card hidden">
         <div class="card-reach-content">
-            <h2>Reach me through: </h2>
             <ul>
                 <li class="linkedin">
                     <a target="_blank" href="https://www.linkedin.com/in/andrepsoliveira/">
@@ -104,15 +126,11 @@
     <div id="feedbackCard" class="card hidden">
         <div class="feedback-card-content">
             <h1>Please help me improve by giving me your feedback!</h1>
+            <p> </p>
             <dl>
-                <dt>What can I improve in the portfolio?</dt>
-                <dd>E.g. navigation, design, projects description, etc</dd>
-                <dt>What can I improve in Data Science?</dt>
-                <dd>E.g. practices, approaches, algorithms, code, etc</dd>
-                <dt>What can I improve in Computer Science?</dt>
-                <dd>E.g. code redability, description, etc</dd>
+                <dt>What can I improve in the portfolio? Data Science? Computer Science?</dt>
             </dl>
-            <p>Please <strong>do not hesitate</strong> to reach me if you have an idea and want to discuss it with me. I like to help! 😀</p>
+            <p>Please <strong>do not hesitate</strong> to reach me if you have an idea and want to discuss it with me! 😀</p>
             <p><strong>Feel free </strong>to reach me through <a target="_blank" href="https://www.linkedin.com/in/andrepsoliveira/">LinkedIn</a> or discord (patchy02).</p>
             <h2>Thank you!</h2>
         </div>

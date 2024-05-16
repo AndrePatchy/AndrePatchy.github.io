@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Libft</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+<body>
+    <div class="container libft">
+        <div class="card libft">
+			<a target="_blank">
+                <img src="../imgs/libft_img.png" alt="libft Image">
+            </a>
+            <p>The mandatory functions in libft include both functions from the standard C library and other functions that are useful for character, string, and memory manipulation. 
+				These 34 mandatory functions are essential to achieving a grade of 100.
+			</p>
+			<ul>
+				<li><a target="_blank" href="https://github.com/AndrePatchy/Libft/tree/main/Subject">Subject</a></li>
+				<li><a target="_blank" href="https://github.com/AndrePatchy/Libft">Code</a></li>
+			</ul>
+			<p> </p>
+			<p>If you don't want to read, check out my walkthrough video (it's in portuguese):</p>
+			<div class="video-container">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/ml78IVUsTtM?si=PtkWqidWT7rXmVfE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<p><strong>Check and manipulate characters</strong></p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>ft_isalpha</td>
+					<td>Alphabetic character test</td>
+				</tr>
+				<tr>
+					<td>ft_isdigit</td>
+					<td>Decimal-digit character test</td>
+				</tr>
+				<tr>
+					<td>ft_isalnum</td>
+					<td>Alphanumeric character test</td>
+				</tr>
+				<tr>
+					<td>ft_isascii</td>
+					<td>Test for ASCII character</td>
+				</tr>
+				<tr>
+					<td>ft_toupper</td>
+					<td>Lower case to upper case letter conversion</td>
+				</tr>
+				<tr>
+					<td>ft_tolower</td>
+					<td>Upper case to lower case letter conversion</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p><strong>Manipulate strings</strong></p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>ft_strlen</td>
+					<td>Find the length of the string</td>
+				</tr>
+				<tr>
+					<td>ft_strlcpy</td>
+					<td>Size-bounded string copying</td>
+				</tr>
+				<tr>
+					<td>ft_strlcat</td>
+					<td>Size-bounded string concatenation</td>
+				</tr>
+				<tr>
+					<td>ft_strchr</td>
+					<td>Locate the character in the string (first occurrence)</td>
+				</tr>
+				<tr>
+					<td>ft_strrchr</td>
+					<td>Locate the character in the string (last occurrence)</td>
+				</tr>
+				<tr>
+					<td>ft_strncmp</td>
+					<td>Compare strings (size-bounded)</td>
+				</tr>
+				<tr>
+					<td>ft_strnstr</td>
+					<td>Locate a substring in a string (size-bounded)</td>
+				</tr>
+				<tr>
+					<td>ft_substr</td>
+					<td>Extract substring from a string</td>
+				</tr>
+				<tr>
+					<td>ft_strjoin</td>
+					<td>Concatenate two strings into a new string (with malloc)</td>
+				</tr>
+				<tr>
+					<td>ft_strtrim</td>
+					<td>Trim the beginning and end of the string with the specified characters</td>
+				</tr>
+				<tr>
+					<td>ft_split</td>
+					<td>Split string, with specified character as delimiter, into an array of strings</td>
+				</tr>
+				<tr>
+					<td>ft_strmapi</td>
+					<td>Create a new string by modifying the string with a specified function</td>
+				</tr>
+				<tr>
+					<td>ft_striteri</td>
+					<td>Iterates through a string, enabling character and index manipulation</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p><strong>Manipulate memory</strong></p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>ft_calloc</td>
+					<td>Memory allocation</td>
+				</tr>
+				<tr>
+					<td>ft_memset</td>
+					<td>Write a byte to a byte string</td>
+				</tr>
+				<tr>
+					<td>ft_bzero</td>
+					<td>Write zeroes to a byte string</td>
+				</tr>
+				<tr>
+					<td>ft_memcpy</td>
+					<td>Copy memory area</td>
+				</tr>
+				<tr>
+					<td>ft_memmove</td>
+					<td>Copy byte string</td>
+				</tr>
+				<tr>
+					<td>ft_memchr</td>
+					<td>Locate byte in byte string</td>
+				</tr>
+				<tr>
+					<td>ft_memcmp</td>
+					<td>Compare byte string</td>
+				</tr>
+				<tr>
+					<td>ft_strdup</td>
+					<td>Save a copy of a string (with malloc)</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p><strong>Manipulate numbers</strong></p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>ft_atoi</td>
+					<td>Convert the ASCII string to an integer</td>
+				</tr>
+				<tr>
+					<td>ft_itoa</td>
+					<td>Convert integer to ASCII string</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p><strong>Write to a file descriptor</strong></p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>ft_putchar_fd</td>
+					<td>Output a character to the given file.</td>
+				</tr>
+				<tr>
+					<td>ft_putstr_fd</td>
+					<td>Output string to the given file.</td>
+				</tr>
+				<tr>
+					<td>ft_putendl_fd</td>
+					<td>Output string to given file with newline.</td>
+				</tr>
+				<tr>
+					<td>ft_putnbr_fd</td>
+					<td>Output integer to the given file.</td>
+				</tr>
+			</table>
+			<p> </p>
+			<p><strong>Bonus functions</strong></p>
+			<p> </p>
+			<p>The bonus functions in libft are focused on list manipulation and are worth an additional 25 towards the final grade. To achieve a grade of 125, all 9 bonus functions and 34 mandatory functions must be completed accurately.
+			</p>
+			<table>
+				<tr>
+					<th>Function</th>
+					<th>Description</th>
+				</tr>
+				  <tr>
+					<td>ft_lstnew</td>
+					<td>Create new list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstadd_front</td>
+					<td>Add a new element at the beginning of the list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstadd_back</td>
+					<td>Add a new element at the end of the list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstsize</td>
+					<td>Count elements of a list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstlast</td>
+					<td>Find the last element of the list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstdelone</td>
+					<td>Delete element from the list</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstclear</td>
+					<td>Delete the sequence of elements of the list from a starting point</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstiter</td>
+					<td>Apply function to the content of all list elements</td>
+				  </tr>
+				  <tr>
+					<td>ft_lstmap</td>
+					<td>Apply function to the content of all list elements into a new list</td>
+				  </tr>
+			</table>
+    </div>
+</body>
+</html>

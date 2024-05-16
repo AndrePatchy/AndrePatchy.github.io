@@ -11,7 +11,7 @@
     min-height: 100vh;
     position: relative;
     z-index: 1; 
-    background-color: bisque;
+    background-color: #12bab9;
     overflow: auto;
 }
 
@@ -97,4 +97,104 @@
 .text-k-means h1 {
     font-size: 40px;
     font-weight: 800;
+}
+
+/* Libft */
+
+.card.libft img {
+    max-width: 90%;
+    display: block;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card.libft iframe {
+    margin-bottom: 5%;
+    margin-top: 3%;
+    border: 10px solid  #12bab9; 
+    border-radius: 15px;  
+    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card.libft ul {
+    line-height: 150%;
+    font-size: 100%;
+}
+
+.card.libft p {
+    line-height: 150%;
+    font-size: 90%;
+}
+
+.card.libft table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card.libft th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 1%;
+    font-size: 90%;
+}
+
+.card.libft th {
+    background-color: #12bab9;
+}
+
+/* gnl card */
+
+.card.gnl img {
+    max-width: 90%;
+    display: block;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.card.gnl iframe {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 10px solid  #12bab9; 
+    border-radius: 15px;  
+    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card.gnl p {
+    line-height: 150%;
+    font-size: 90%;
+}
+
+.card.gnl li {
+    line-height: 150%;
+    font-size: 110%;
+}
+
+/* printf */
+
+.card.printf img {
+    max-width: 90%;
+    display: block;
+    margin-bottom: 2.5%;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.card.printf iframe {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border: 10px solid  #12bab9; 
+    border-radius: 15px;  
+    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card.printf p {
+    line-height: 150%;
+    font-size: 100%;
+}
+
+.card.printf li {
+    line-height: 150%;
+    font-size: 120%;
 }

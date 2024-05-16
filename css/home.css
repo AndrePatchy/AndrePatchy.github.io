@@ -7,11 +7,11 @@
     font-family: "Muli", sans-serif
 }
 
-/* Main Ccntainer */
+/* Main Container */
 
 .container {
     width:100%;
-    height: 100vh;
+    height: 130vh;
     position: relative;
 }
 
@@ -25,7 +25,6 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url('../imgs/brain.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,8 +41,8 @@
 }
 
 .button {
-    background-color:antiquewhite; 
-    border: .5px solid rgb(0, 0, 0);
+    background-color:rgb(253, 170, 62); 
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     color: #000000;
     padding: 1%;
@@ -55,7 +54,7 @@
 
 .button:hover {
     background-color: #000000;
-    color: rgb(250, 235, 215);
+    color: rgb(253, 170, 62);
 }
 
 .hidden {
@@ -70,6 +69,11 @@
     filter: blur(7px);
 }
 
+.button-container h1 {
+    margin-top: 0%;
+    padding: 1.5%;
+}
+
 /* Cards */
 
 .card {
@@ -77,29 +81,30 @@
     padding: 1%;
     border-radius: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    max-width: 50%;
-    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    margin: -20% auto;
     position:relative;
-    top: -55%;
 }
 
 /* About Me Card */
 
 .card-about-content h1 {
-    font-size: 2.5vw;
-    color: #7aaec0;
+    font-size: 200%;
+    color: rgb(253, 170, 62);
     margin-bottom: 20px;
-}
-
-.card-about-content p {
-    font-size: 1.5vw;
-    margin-bottom: 15px;
     text-align: left;
 }
 
+.card-about-content p {
+    font-size: 170%;
+    margin-bottom: 2.5%;
+    text-align: left;
+    line-height: 150%;
+}
+
 .card-about-content strong {
-    color: #7aaec0;
+    color: rgb(253, 170, 62);
 }
 
 .card-about-content a:link {
@@ -112,46 +117,53 @@
 }
 
 .card-about-content h2 {
-    font-size: 1.5vw;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    color:  #7aaec0;
-}
-
-.card-about-content h3 {
-    font-size: 1.5vw;
-    margin-bottom: 10px;
-    margin-top: 20px;
-    color:  #7aaec0;
+    font-size: 180%;
+    margin-bottom: 1.5%;
+    margin-top: 2.5%;
+    color:  rgb(253, 170, 62);
 }
 
 .card-about-content ul {
     padding-left: 5%;
-    font-size: 1.5vw;
+    font-size: 150%;
     list-style-type: square;
+    margin-bottom: 2.5%;
 }
 
-.card-about-content ul li {
-    margin-bottom: 5px;
+.card-about-content li {
+    line-height: 150%;
 }
 
 /* Data Science Card */
 
+.card-datascience-content img {
+    max-width: 100%;
+    width: 15%;
+    display: block;
+    margin-bottom: 2.5%;
+}
+
 .card-datascience-content h1 {
-    font-size: 1.5vw;
-    color: #000000;
+    text-align: left;
+    font-size: 150%;
+    color: rgb(0, 0, 0);
     margin-bottom: 4%;
+    line-height: 150%;
 }
 
 .card-datascience-content h2 {
-    font-size: 1.5vw;
-    color: #7aaec0;
+    font-size: 155%;
+    color:rgba(191,215,47,255);
 }
 
 .card-datascience-content ul {
-    font-size: 1.5vw;
+    font-size: 150%;
     list-style-type: square;
-    padding: 3%;
+    padding: 2%;
+}
+
+.card-datascience-content li {
+    line-height: 150%;
 }
 
 .card-datascience-content a:link {
@@ -168,33 +180,58 @@
 
 /* Computer Science */
 
-#computerCard {
-    width: 250px;
-    height: 75px;
+.card-computer-content img {
+    max-width: 100%;
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-computer-content h1 {
-    font-size: 24px;
-    color: #7aaec0;
-    text-align: center;
+    font-size: 160%;
+    color: #1d4d88;
+    text-align: left;
+}
+
+.card-computer-content p {
+    margin-top: 2%;
+    font-size: 125%;
+    line-height: 150%;
+}
+
+.card-computer-content h2 {
+    margin-top: 3%;
+    color:  #7aaec0;
+    font-size: 180%;
+}
+
+.card-computer-content a:link {
+    text-decoration: none;
+    background-color: transparent;
+    color:  #7aaec0;
+}
+
+.card-computer-content a:link:hover {
+    color: #1d4d88;
+}
+
+.card-computer-content p a:hover {
+    color: #1d4d88;
 }
 
 /* Reach Me Card */
 
-.card-reach-content h2 {
-    margin-bottom: 5%;
-    color:  #7aaec0;
-}
-
 .card-reach-content ul {
-    font-size: 1.5vw;
+    font-size: 200%;
 }
 
 .card-reach-content li {
     list-style: none;
     line-height: 60px;
     margin-left: 10px;
-    position: relative;
+    /* position: relative; */
+    top:-60px;
 }
 
 
@@ -205,7 +242,7 @@
 }
 
 .card-reach-content a:hover {
-    color: #7aaec0;
+    color:rgb(253, 170, 62);
     background-color: transparent;
     text-decoration:none;
 }
@@ -283,12 +320,13 @@
 /* Feedback card */
 
 .feedback-card-content h1 {
-    font-size: 1.5vw;
-    color: #7aaec0;
+    font-size: 180%;
+    text-align: left;
+    color: rgb(253, 170, 62);
 }
 
 .feedback-card-content dl {
-    font-size: 1.5vw;
+    font-size: 180%;
     margin-bottom: 5%;
 }
 
@@ -298,21 +336,22 @@
 
 .feedback-card-content dl dd {
     margin-left: 10%;
-    font-size: 1.5vw;
+    font-size: 180%;
 }
 
 .feedback-card-content p {
-    font-size: 1.5vw;
+    font-size: 180%;
     margin-bottom: 5%;
 }
 
 .feedback-card-content h2 {
-    font-size: 1.5vw;
-    color: #7aaec0;
+    font-size: 180%;
+    color: rgb(253, 170, 62);
+    text-align: center;
 }
 
 .feedback-card-content strong {
-    color: #7aaec0;
+    color: rgb(253, 170, 62);
 }
 
 .feedback-card-content a:link {
