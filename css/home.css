@@ -7,6 +7,14 @@
     font-family: "Muli", sans-serif
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 1rem; /* Ensure this scales correctly */
+}
+
 /* Main Container */
 
 .container {
