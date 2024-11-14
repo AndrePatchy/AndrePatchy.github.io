@@ -40,7 +40,6 @@ export default {
   width: 100%;
   height: auto;
   width: 50%;
-  margin-top: -50px;
 }
 .responsive2 {
   width: 100%;
